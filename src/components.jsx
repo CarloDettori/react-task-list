@@ -20,7 +20,7 @@ function BacklogProgressTasksComponent() {
     })
     const template = <>
         <h2>Backlog or in Progress Task {BacklogProgressTasks.lenght}</h2>
-        <ul>BacklogProgressTasks</ul>
+        <ul>{BacklogProgressTasks}</ul>
     </>
 }
 const CompletedTasksComponent = () => (
@@ -30,3 +30,7 @@ const CompletedTasksComponent = () => (
         ))}
     </ul>
 );
+
+
+module.exports = HeaderComponent;
+module.exports = BacklogProgressTasksComponent();
