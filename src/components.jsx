@@ -44,4 +44,4 @@ function CompletedTasksComponent() {
 
 module.exports = HeaderComponent;
 module.exports = BacklogProgressTasksComponent();
-module.exports = CompletedTasks();
+module.exports = CompletedTasksComponent();
