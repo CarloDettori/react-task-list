@@ -9,11 +9,11 @@ CompletedTask =
   function App() {
 
     return (
-      <>
+      <div>
         <div>{HeaderComponent}</div>
         <div>{BacklogProgressTasksComponent}</div>
-        <div>{BacklogProgressTasksComponent}</div>
-      </>
+        kjgv  <div>{BacklogProgressTasksComponent}</div>
+      </div>
     )
   }
 

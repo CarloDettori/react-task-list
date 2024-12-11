@@ -26,7 +26,7 @@ function BacklogProgressTasksComponent() {
         <ul>{BacklogProgressTasks}</ul>
     </>
     return template
-}
+};
 
 
 
@@ -47,7 +47,7 @@ function CompletedTasksComponent() {
         <ul>{CompletedTasks}</ul>
     </>
     return template
-}
+};
 
 
 
