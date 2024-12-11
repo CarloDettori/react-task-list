@@ -8,8 +8,6 @@ CompletedTask =
 
   function App() {
 
-
-
     return (
       <>
         <div>{HeaderComponent}</div>

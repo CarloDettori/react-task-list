@@ -1,5 +1,5 @@
 import tasks from "../models/tasks"
-//mostra title, pryority e estimatedTime
+
 
 const HeaderComponent = () => (
     <header>
@@ -7,6 +7,9 @@ const HeaderComponent = () => (
     </header>
 );
 
+
+
+//mostra title, pryority e estimatedTime dei Backlog e In_progress
 function BacklogProgressTasksComponent() {
     let BacklogProgressTasks = [];
     BacklogProgressTasks = task.filter((element) => {
@@ -22,8 +25,12 @@ function BacklogProgressTasksComponent() {
         <h2>Backlog or in Progress Task {BacklogProgressTasks.lenght}</h2>
         <ul>{BacklogProgressTasks}</ul>
     </>
+    return template
 }
 
+
+
+//mostra title, pryority e estimatedTime dei Completed
 function CompletedTasksComponent() {
     let CompletedTasks = [];
     CompletedTasks = task.filter((element) => {
@@ -39,7 +46,9 @@ function CompletedTasksComponent() {
         <h2>Backlog or in Progress Task {CompletedTasks.lenght}</h2>
         <ul>{CompletedTasks}</ul>
     </>
+    return template
 }
+
 
 
 module.exports = HeaderComponent;
