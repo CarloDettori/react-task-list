@@ -1,20 +1,19 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-const Header = require("./components")
-const BacklogProgressTasksComponent = require("./components");
-const CompletedTasksComponent = require("./components")
-CompletedTask =
+import Header from './components/headerComponent';
+import BacklogProgressTasks from './components/backlogComponents';
+import CompletedTasks from './components/completedComponent';
 
-  function App() {
 
-    return (
-      <div>
-        <div>{HeaderComponent}</div>
-        <div>{BacklogProgressTasksComponent}</div>
-        kjgv  <div>{BacklogProgressTasksComponent}</div>
-      </div>
-    )
-  }
+function App() {
+
+  return <>
+    <HeaderComponent />
+    <BacklogProgressTasks />
+    <CompletedTasks />
+  </>
+
+}
 
 export default App
