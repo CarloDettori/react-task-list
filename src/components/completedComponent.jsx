@@ -1,6 +1,8 @@
+import tasks from "../../data/tasks";
+
 function CompletedTasks() {
     let CompletedTasks = [];
-    CompletedTasks = task.filter((element) => {
+    CompletedTasks = tasks.filter((element) => {
         return element.state.includes("")
     }).map((element) => {
         return <li key={element.id}>

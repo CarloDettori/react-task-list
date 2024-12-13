@@ -1,13 +1,10 @@
-import tasks from "../../data/tasks"
-
-
-
+import tasks from "../../data/tasks";
 
 
 //mostra title, pryority e estimatedTime dei Backlog e In_progress
 function BacklogProgressTasks() {
     let BacklogProgressTasks = [];
-    BacklogProgressTasks = task.filter((element) => {
+    BacklogProgressTasks = tasks.filter((element) => {
         return element.state.includes("backlog" || "progress")
     }).map((element) => {
         return <li key={element.id}>
@@ -22,10 +19,6 @@ function BacklogProgressTasks() {
     </>
     return template
 };
-
-
-
-
 
 
 export default BacklogProgressTasks;
