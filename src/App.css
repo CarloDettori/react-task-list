@@ -1,0 +1,40 @@
+body {
+    width: 100%
+}
+
+h1 {
+    padding: 30px;
+}
+
+h2 {
+    padding: 40px;
+    font-weight: 800;
+}
+
+h3 {
+    padding-bottom: 10px;
+    padding-right: 10px
+}
+
+.state-tag {
+    padding: 5px 10px;
+    background-color: orangered;
+}
+
+.infos {
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+li {
+    padding-left: 40px;
+    list-style-type: none;
+}
+
+#root {
+    width: 100%;
+}
+
+header {
+    background-color: #80ffd2;
+}
