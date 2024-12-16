@@ -2,10 +2,8 @@ import tasks from "../../data/tasks";
 
 //mostra title, pryority e estimatedTime dei Backlog e In_progress
 function BacklogProgressTasks() {
-    let BacklogProgressTasks = [];
-
-    BacklogProgressTasks = tasks.filter((element) => {
-        return element.state.includes("backlog" || "in_progress")
+    const backProgressTasks = tasks.filter((element) => {
+        return (element.state.includes("backlog") || element.state.includes("in_progress"))
     }).map((element) => {
         return <li key={element.id}>
             <div className="d-flex align-items-center">
@@ -16,9 +14,14 @@ function BacklogProgressTasks() {
             <p className="infos">Estimated Time: {element.estimatedTime}</p>
         </li>
     })
+    //estraggo la property length per non farle fare interferenza con il return della funzione map
+    console.log('tot filtered', backProgressTasks);
+    const totalTasks = backProgressTasks.length
+
+
     const template = <>
-        <h2>Backlog or in Progress Task {BacklogProgressTasks.lenght}</h2>
-        <ul>{BacklogProgressTasks}</ul>
+        <h2>Backlog or in Progress Task {totalTasks}</h2>
+        <ul>{backProgressTasks}</ul>
     </>
     return template
 };
